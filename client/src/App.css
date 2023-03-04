@@ -1,0 +1,100 @@
+/* parent div   */
+*{
+  margin: 0;
+  padding: 0;
+}
+.parent {
+  width: 100vw;
+  background-color: hsl(222, 14%, 10%);
+  padding: 2rem 0 ;
+
+}
+/* top heading  */
+h2{
+  text-align: center  ;
+  text-shadow: 1px 1px gray;
+  margin-bottom: 40px;
+  color:#61dafb ;
+  text-transform: uppercase;
+}
+
+p{
+  text-align: justify;
+  columns: grey;
+}
+
+.posts-container {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Start all cards  */
+.post-card {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background: #282c34;
+  color: #fff;
+}
+.post-card h1 {
+  text-align: center;
+}
+
+.post-card h1,
+.post-card h3 {
+  margin-bottom: 5px;
+  
+}
+
+.post-card h3{
+  color:#61dafb;
+}
+
+.post-card h5 {
+  margin-bottom: 10px;
+}
+
+/* End all cards */
+
+/*----------------------------------------------------
+| Start  @media Query
+------------------------------------------------------------------*/
+@media(max-width:1280px) {
+  .posts-container {
+      gap:20px
+  }
+  
+}
+
+@media(max-width:991px){
+  .posts-container {
+    margin: 0 2.3rem;
+    
+  }
+}
+
+@media(max-width:768px){
+  .posts-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  .posts-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 1.7rem;
+  }
+}
+
+@media(max-width: 416px) {
+  .posts-container {
+    margin: 0 1rem;
+  }
+}
+
+/*----------------------------------------------------
+| End  @media Query
+------------------------------------------------------------------*/
+
